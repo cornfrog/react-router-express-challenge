@@ -1,0 +1,107 @@
+@import "./foundation/settings";
+@import "~foundation-sites/scss/foundation";
+
+@include foundation-everything;
+// place global css here
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.resume-section {
+  border: 1px solid black;
+  margin-top: 5em;
+}
+
+.project {
+  border: 1px solid darkgreen;
+  margin-top: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: center;
+}
+
+.link-to-project{
+  font-size: 2.55rem;
+  text-decoration: underline;
+  color: black;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.about-title{
+  font-size: 3.25rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about-content{
+  margin: 1.75rem auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.work_experiences {
+  text-align: center;
+}
+
+.volunteer_experiences {
+  text-align: center;
+}
+
+.education {
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+}
+
+
+#resume-links{
+  text-align: center;
+}
+
+.site-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  font-size: 2.15rem;
+  margin: 2rem 0;
+}
+
+.home-link:hover{
+  text-decoration: underline;
+}
+
+.resume-link:hover{
+  text-decoration: underline;
+}
+
+.projects-link:hover{
+  text-decoration: underline;
+}
+
+
+.project-title{
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.project-desc{
+  margin: 0 auto;
+  font-size: 1.75rem;
+  width: 80%;
+  border: .25rem dashed black;
+  border-radius: .5rem;
+}
