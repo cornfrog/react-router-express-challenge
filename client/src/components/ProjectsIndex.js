@@ -15,6 +15,7 @@ const ProjectsIndex = props => {
       }
       const responseData = await response.json()
       setProjects(responseData.projects)
+      props.setTest(responseData.projects)
     } catch(err) {
       console.error(`Error in fetch: ${err.message}`)
     }
